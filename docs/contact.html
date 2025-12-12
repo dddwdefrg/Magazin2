@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styyyle.css">
+    <script src="script2.js" defer></script>
+    <title>2 режим</title>
+</head>
+
+<body>
+    <input type="text" id="promo" placeholder="Promocode">
+    <h2 class="bud"></h2>
+    <div id="cart">
+
+        <button id="cart-button">Корзина товаров:</button>
+
+        <div id="cart-products" class="cart">
+            <div class="cart-list"></div>
+
+            <div class="cart-total">
+                <span class="zag"></span>
+            </div>
+        </div>
+
+
+        <div class="cart-actions">
+            <button class="buy-all">Купить всё</button>
+            <button class="clear-cart">Очистить корзину</button>
+        </div>
+
+    </div>
+
+
+ 
+    <div class="products">
+        <div class="card">
+            <h2 class="name">Кола</h2>
+            <img src="Coca_Cola_Flasche_-_Original_Taste.jpg" class="img" width="150px" height="150px">
+            <p class="cost">40</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Фанта</h2>
+            <img src="images.jpg" class="img" width="150px" height="150px">
+            <p class="cost">38</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Гречка</h2>
+            <img src="images (1).jpg" class="img" width="150px" height="150px">
+            <p class="cost">59</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Спрайт</h2>
+            <img src="images (2).jpg" class="img" width="150px" height="150px">
+            <p class="cost">48</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Грузинский лимонад</h2>
+            <img src="photo_2025-12-07_10-52-47.jpg" class="img" width="150px" height="150px">
+            <p class="cost">55</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Армянская вода джермук</h2>
+            <img src="photo_2025-12-07_10-54-18.jpg" class="img" width="150px" height="150px">
+            <p class="cost">67</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Рис</h2>
+            <img src="images (3).jpg" class="img" width="150px" height="150px">
+            <p class="cost">41</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Хлеб</h2>
+            <img src="images (4).jpg" class="img" width="150px" height="150px">
+            <p class="cost">23</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Черный Хлеб</h2>
+            <img src="images (5).jpg" class="img" width="150px" height="150px">
+            <p class="cost">25</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Клубничный йогурт</h2>
+            <img src="chudo-520-g-jogurt-pitevoj-klubnika-zemlyanika-25.jpg" class="img" width="150px" height="150px">
+            <p class="cost">43</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Персиковый йогурт</h2>
+            <img src="pers.jpg" class="img" width="150px" height="150px">
+            <p class="cost">43</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Ананасовый йогурт</h2>
+            <img src="images (6).jpg" class="img" width="150px" height="150px">
+            <p class="cost">43</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Вишневый йогурт</h2>
+            <img src="vish.jpg" class="img" width="150px" height="150px">
+            <p class="cost">43</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Актимель</h2>
+            <img src="catalog_product_main_79579.jpg" class="img" width="150px" height="150px">
+            <p class="cost">40</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Трусы байдена</h2>
+            <img src="photo_2025-12-07_11-04-39.jpg" class="img" width="150px" height="150px">
+            <p class="cost">225</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Трусы трампа</h2>
+            <img src="photo_2025-12-07_11-06-55.jpg" class="img" width="150px" height="150px">
+            <p class="cost">221</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Молоко</h2>
+            <img src="91.jpg" class="img" width="150px" height="150px">
+            <p class="cost">68</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Хлопья</h2>
+            <img src="nestleLion-800x800.png" class="img" width="150px" height="150px">
+            <p class="cost">89</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Чай</h2>
+            <img src="yava_klubn-1200x1654.jpg" class="img" width="150px" height="150px">
+            <p class="cost">102</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Кофе</h2>
+            <img src="gettyimages-641025376.jpg" class="img" width="150px" height="150px">
+            <p class="cost">120</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Сыр</h2>
+            <img src="100.jpg" class="img" width="150px" height="150px">
+            <p class="cost">78</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Колбаска</h2>
+            <img src="101.jpg" class="img" width="150px" height="150px">
+            <p class="cost">99</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Креветки</h2>
+            <img src="102.jpg" class="img" width="150px" height="150px">
+            <p class="cost">130</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Кріб</h2>
+            <img src="103.png" class="img" width="150px" height="150px">
+            <p class="cost">270</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Лось</h2>
+            <img src="104.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1170</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Статуя свободи</h2>
+            <img src="105.jpg" class="img" width="150px" height="150px">
+            <p class="cost">18860</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Волосы трампа</h2>
+            <img src="106.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1234</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Школа</h2>
+            <img src="107.gif" class="img" width="150px" height="150px">
+            <p class="cost">151 151</p>
+            <button class="buy">+</button>
+
+        </div>
+        <div class="card">
+            <h2 class="name">Больница</h2>
+            <img src="108.jpg" class="img" width="150px" height="150px">
+            <p class="cost">191919</p>
+            <button class="buy">+</button>
+
+        </div>
+        <div class="card">
+            <h2 class="name">Верблюл</h2>
+            <img src="109.jpg" class="img" width="150px" height="150px">
+            <p class="cost">3010 </p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Ламба</h2>
+            <img src="110.jpg" class="img" width="150px" height="150px">
+            <p class="cost">4000000 </p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Феррари</h2>
+            <img src="111.jpg" class="img" width="150px" height="150px">
+            <p class="cost">2000000</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Пульт(для фпв дрона)</h2>
+            <img src="112.png" class="img" width="150px" height="150px">
+            <p class="cost">5099</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Соль(легальная)</h2>
+            <img src="113.jpg" class="img" width="150px" height="150px">
+            <p class="cost">60</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Сахар</h2>
+            <img src="114.jpg" class="img" width="150px" height="150px">
+            <p class="cost">50</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Мусор(+мальчик)</h2>
+            <img src="115.jpg" class="img" width="150px" height="150px">
+            <p class="cost">50000</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Конфеты рошен</h2>
+            <img src="116.jpg" class="img" width="150px" height="150px">
+            <p class="cost">213</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Вентилятор</h2>
+            <img src="117.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1488</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Дом в мадриде</h2>
+            <img src="118.jpg" class="img" width="150px" height="150px">
+            <p class="cost">6000000</p>
+            <button class="buy">+</button>
+        </div>
+
+        <div class="card">
+            <h2 class="name">Тюрьма в Норвегии</h2>
+            <img src="119.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1111111</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Сигнализация</h2>
+            <img src="120.jpg" class="img" width="150px" height="150px">
+            <p class="cost">2990</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Охрана</h2>
+            <img src="121.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">🐶</h2>
+            <img src="122.png" class="img" width="150px" height="150px">
+            <p class="cost">500</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Кошка</h2>
+            <img src="123.jpg" class="img" width="150px" height="150px">
+            <p class="cost">600</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Дверь</h2>
+            <img src="124.jpg" class="img" width="150px" height="150px">
+            <p class="cost">2999</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Унітаз Пенівайз</h2>
+            <img src="125.jpg" class="img" width="150px" height="150px">
+            <p class="cost">9999</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Окна</h2>
+            <img src="126.jpg" class="img" width="150px" height="150px">
+            <p class="cost">11111</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Ракета(фламинго)</h2>
+            <img src="127.jpg" class="img" width="150px" height="150px">
+            <p class="cost">100000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Шахед</h2>
+            <img src="128.jpg" class="img" width="150px" height="150px">
+            <p class="cost">7000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Атб</h2>
+            <img src="129.jpg" class="img" width="150px" height="150px">
+            <p class="cost">2500000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Аврора</h2>
+            <img src="130.png" class="img" width="150px" height="150px">
+            <p class="cost">1500000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Париж</h2>
+            <img src="131.jpg" class="img" width="150px" height="150px">
+            <p class="cost">10000000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Гитлер</h2>
+            <img src="132.jpg" class="img" width="150px" height="150px">
+            <p class="cost">14880</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Я</h2>
+            <img src="133.jpg" class="img" width="150px" height="150px">
+            <p class="cost">10082012 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Паша дуров</h2>
+            <img src="134.jpg" class="img" width="150px" height="150px">
+            <p class="cost">15000000 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Тапки членоходы</h2>
+            <img src="135.jpeg" class="img" width="150px" height="150px">
+            <p class="cost">10000 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Баребух</h2>
+            <img src="136.jpg" class="img" width="150px" height="150px">
+            <p class="cost">50 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Человек паук</h2>
+            <img src="137.jpg" class="img" width="150px" height="150px">
+            <p class="cost">200000 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Папа купит мне мопэд</h2>
+            <img src="138.jpg" class="img" width="150px" height="150px">
+            <p class="cost">30000 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">ф35</h2>
+            <img src="139.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1025000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Телефон</h2>
+            <img src="140.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Подушка крутая типо</h2>
+            <img src="141.jpeg" class="img" width="150px" height="150px">
+            <p class="cost">228 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Билет в Армению </h2>
+            <img src="142.jpg" class="img" width="150px" height="150px">
+            <p class="cost">3910</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Плинтус</h2>
+            <img src="143.png" class="img" width="150px" height="150px">
+            <p class="cost">2222 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Рога сатаны</h2>
+            <img src="144.png" class="img" width="150px" height="150px">
+            <p class="cost">666 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Ріба</h2>
+            <img src="145.jpg" class="img" width="150px" height="150px">
+            <p class="cost">2222 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Сникерс</h2>
+            <img src="146.jpg" class="img" width="150px" height="150px">
+            <p class="cost">100 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Хочу эмэмдэмс</h2>
+            <img src="147.jpg" class="img" width="150px" height="150px">
+            <p class="cost">46 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Елена</h2>
+            <img src="148.jpg" class="img" width="150px" height="150px">
+            <p class="cost">777 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Батарея</h2>
+            <img src="149.jpg" class="img" width="150px" height="150px">
+            <p class="cost">2899 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Розетка</h2>
+            <img src="150.jpg" class="img" width="150px" height="150px">
+            <p class="cost">48 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Пульт от трампа</h2>
+            <img src="151.jpg" class="img" width="150px" height="150px">
+            <p class="cost">99 </p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">араб</h2>
+            <img src="152.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1109</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Армянин</h2>
+            <img src="153.jpg" class="img" width="150px" height="150px">
+            <p class="cost">1904</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Нарды</h2>
+            <img src="154.jpg" class="img" width="150px" height="150px">
+            <p class="cost">850</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Шедевр исскуства</h2>
+            <img src="155.jpg" class="img" width="150px" height="150px">
+            <p class="cost">10000</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Сын Ахаха</h2>
+            <img src="156.jpg" class="img" width="150px" height="150px">
+            <p class="cost">11090</p>
+            <button class="buy">+</button>
+        </div>
+        <div class="card">
+            <h2 class="name">Яишко Нагиев</h2>
+            <img src="157.jpg" class="img" width="150px" height="150px">
+            <p class="cost">12345</p>
+            <button class="buy">+</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
